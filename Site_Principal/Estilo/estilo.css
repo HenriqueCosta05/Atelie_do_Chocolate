@@ -1,0 +1,121 @@
+/*ESTILIZAÇÃO GERAL*/
+
+body{
+  background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+}
+
+header{
+  position: sticky;
+  top: 0%;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+
+.itens-navegacao {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+
+
+  }
+
+  .logotipo {
+    width: 190px;
+    display: inline;
+    vertical-align: super;
+    float: left;
+    margin-left: 58px;
+    margin-top: 20px;
+    position: absolute;
+  }
+
+  .itens-navegacao ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: -2px;
+    font-size: 22px;
+    font-family: 'Montreal', Arial;
+    color: white;
+    padding: 4px;
+    background-color: #701e00;
+    border-radius: 10px 10px 0px 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+  }
+  .itens-navegacao ul li:hover {
+    transform: scale(1.1);
+    background-color: #a62c00;
+    box-shadow: 0px -5px 0px #ffffff;
+  }
+
+
+  .rosa {
+    background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+  }
+
+  .rosa-escuro {
+    background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+    padding-top: 0.8em;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  html, body {
+    min-height: 100%;
+}
+  body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+  .carousel-slide {
+    width: 34em;
+    margin-top: 2em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #a0a0a0;
+    box-shadow: black;
+  }
+
+  @media (max-width: 1000px){
+    .itens-navegacao ul li {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 6em;
+      margin-left: -2px;
+      font-size: 22px;
+      font-family: 'Montreal', Arial;
+      color: white;
+      padding: 4px;
+      background-color: #701e00;
+      border-radius: 10px 10px 0px 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .logotipo {
+      width: 180px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      margin-left: 0;
+    }
+  }

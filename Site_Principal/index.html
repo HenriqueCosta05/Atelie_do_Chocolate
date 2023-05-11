@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Estilo/estilo.css" />
+  <link rel="stylesheet" href="./Estilo/reset.min.css">
+  <link rel="stylesheet" href="./Estilo/default.css">
+  <link rel="stylesheet" href="./Estilo/style.css">
+  <link rel="stylesheet" href="./Estilo/carousel.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+  <!--Importação de Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <title>Ateliê do Chocolate</title>
+</head>
+
+<body>
+  <div>
+    <header>
+      <div class="rosa">
+        <img src="Imagens/logotipo.png" alt="logotipo" class="logotipo" />
+        <nav class="itens-navegacao">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#avalicoes">Avaliações</a></li>
+            <li><a href="formulario.html">Mais Informações</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rosa-escuro">
+      </div>
+    </header>
+    <div id="home">
+      <main class="main">
+
+        <section class="regular slider">
+          <div>
+            <img src="Imagens/Ketlyn.jpg">
+          </div>
+          <div>
+            <img src="Imagens/VIOLETA.jpg">
+          </div>
+          <div>
+            <img src="Imagens/ROSA.jpg">
+          </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script type="text/javascript">
+          $(document).on('ready', function () {
+            $(".regular").slick({
+              dots: true,
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              arrows: false
+            });
+          });
+        </script>
+
+      </main>
+    </div>
+    <section id="servicos">
+      <div class="viewport">
+        <div class="cards">
+          <div class="card">
+            <div id="slider">
+              <div class="slide">
+                <p></p>
+              </div>
+              <div class="slide">
+                <p></p>
+              </div>
+              <div class="slide">
+                <p></p>
+              </div>
+              <div class="slide">
+                <p></p>
+              </div>
+            </div>
+            <div class="card_img card1">
+
+              <div class="plus">
+                <p>+</p>
+              </div>
+            </div>
+            <h3>SALGADOS</h3>
+            <div class="line">
+            </div>
+            <p> No Ateliê do Chocolate, você encontra diversos tipos de salgados, indispensáveis para festas infantis .
+            </p>
+
+
+          </div>
+          <div class="card">
+            <div id="slider">
+              <div class="slide2">
+                <p></p>
+              </div>
+              <div class="slide2">
+                <p></p>
+              </div>
+              <div class="slide2">
+                <p></p>
+              </div>
+              <div class="slide2">
+                <p></p>
+              </div>
+            </div>
+            <div class="card_img card2">
+              <div class="plus">
+                <p>+</p>
+              </div>
+            </div>
+            <h3>DOCES</h3>
+            <div class="line">
+            </div>
+            <p> Confira as melhores oportunidades para adoçar a festa da sua criança.</p>
+          </div>
+          <div class="card">
+            <div id="slider">
+              <div class="slide3">
+                <p></p>
+              </div>
+              <div class="slide3">
+                <p></p>
+              </div>
+              <div class="slide3">
+                <p></p>
+              </div>
+              <div class="slide3">
+                <p></p>
+              </div>
+            </div>
+            <div class="card_img card3">
+              <div class="plus">
+                <p>+</p>
+              </div>
+            </div>
+            <h3>ALGODÃO DOCE</h3>
+            <div class="line">
+            </div>
+            <p>Doces, deliciosos e macios como a nuvem.</p>
+          </div>
+          <div class="card">
+            <div class="card_img card4">
+              <div class="plus">
+                <p>+</p>
+              </div>
+            </div>
+            <h3>CASCATA DE CHOCOLATE</h3>
+            <div class="line">
+            </div>
+            <p>Chocolate das melhores marcas derretidos para incrementar seus aperitivos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="galeria">
+      <main class="gallery">
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-34.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-37(1).jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-42.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-47-19.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-47-31.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-43.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-47-28(1).jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-50-41.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-34.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-37(1).jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-42.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-47-19.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-47-31.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-34.jpg" alt="unsplash image" />
+        </figure>
+        <figure>
+          <img src="Imagens/PHOTO-2023-05-04-18-44-37(1).jpg" alt="unsplash image" />
+        </figure>
+      </main>
+    </section>
+
+
+    <footer>
+      <div class="rodape">
+        <h1>Todos os direitos reservados.
+        </h1>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
