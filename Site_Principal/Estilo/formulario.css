@@ -57,18 +57,18 @@ header{
   
   
     .rosa {
-      background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
-      margin: 0;
+      background: rgba(255,240,235,255);
       padding: 0;
       overflow: hidden
     }
   
     .rosa-escuro {
-      background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+      background: #ffd9cb;
       padding-top: 0.8em;
       margin: 0;
       overflow: hidden;
     }
+
     @media (max-width: 1000px){
         .itens-navegacao ul li {
           text-decoration: none;
@@ -98,20 +98,22 @@ header{
 
 body {
 background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+background-image: url(../Imagens/doce22.png);
 }
 
 form {
     margin: 10px;
     width: 40%;
+    height: 100%;
     min-width: 350px;
-    background-color: #ffe4ff;
+    background-color: #ffcece23;
     border-radius: 5px;
     box-shadow: 0 15px 30px linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
     margin: 100px auto;
 }
 
-input, textarea, select {
-    min-width: 320px;
+input:not([type="checkbox"]), textarea, select{
+    min-width: 500px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -135,7 +137,9 @@ button {
     min-width: 320px;
     border: none;
     border-radius: 5px;
-    background: #a551ea;
+    background: #ecaed4;
+    color: #fff;
+    font-weight: bold;
 }
 
 button:hover {
@@ -145,7 +149,7 @@ button:hover {
     min-width: 320px;
     border: none;
     border-radius: 5px;
-    background: #b473ea;
+    background: #eaa7d2;
 }
 
 h1 {
@@ -154,5 +158,50 @@ h1 {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+}
+
+.insercao-informacoes {
+  padding-top: 25px;
+  text-align: center;
+}
+
+label {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+}
+
+@media (max-width: 1440px) {
+  input, textarea, select{
+    min-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 10px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+form {
+  margin: 10px;
+  width: 500px;
+  height: 100%;
+  min-width: 400px;
+  background-color: #ffcece23;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+  margin: 100px auto;
+
+}
 }

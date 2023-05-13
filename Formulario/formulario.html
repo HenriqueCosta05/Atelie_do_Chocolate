@@ -40,29 +40,43 @@
         <h1>Mais informações</h1>
     <p>Para mais informações, preencha o formulário a seguir. O prazo de resposta é de (a combinar) dias úteis.</p>
     <input type="hidden" name="_next" value="https://ateliedochocolate.com.br/agradecimento.html">
-   
-    <label for="text" type="text" name="nome" class="campo nome"></label>
-            <input type="text" class="campo nome" placeholder="Digite seu nome: " required/>
+   <p class="insercao-informacoes">Digite seu nome:</p>
+    <label for="text" type="text" name="Nome" class="campo nome"></label>
+            <input type="text" class="campo nome" placeholder="Nome: " required/>
 
-        <label for="email" name="" class="campo email"></label>
+          <p class="insercao-informacoes">Digite seu e-mail:</p>
+        <label for="email" name="Email" class="campo email"></label>
             <input id="email" class="campo email" type="email" placeholder="Digite seu e-mail:" required />
 
+            <p class="insercao-informacoes">Insira a quantidade de convidados: </p>
             <label for="convidados" class="campo convidados"></label>
-            <select name="convidados" id="convidados" class="campo convidados" required>
-                <option value="">Escolha a quantidade de convidados:</option>
-                <option value="ate-50">Até 50 convidados</option>
-                <option value="51-100">Entre 51 e 100 convidados</option>
-                <option value="101-150">Entre 101 e 150 convidados</option>
-                <option value="151-200">Entre 151 e 200 convidados</option>
-                <option value="mais-de-200">Mais de 200 convidados</option>
-            </select>
+            <input type="number" value="convidados" name="Convidados" min="0" max="500" placeholder="Quantidade de convidados: ">
 
-            <label for="qtd-salgados" class="campo qtd-salgados"></label>
-            <input type="number" id="qtd-salgados" class="campo qtd-salgados" placeholder="Escolha a quantidade de salgados desejada: " required min="0" max="1000" step="5"/>
-
-            <label for="qtd-doces" class="campo qtd-salgados"></label>
-            <input type="number" id="qtd-doces" class="campo qtd-doces" placeholder="Escolha a quantidade de doces desejada:" min="0" max="1000" step="5" required />
-          
+            <p class="insercao-informacoes">Escolha os itens para sua festa: </p>
+              <input type="checkbox" name="doces" value="brigadeiro">
+              <label>Brigadeiro</label>
+              <input type="checkbox" name="doces" value="beijinho">
+              <label>Beijinho</label>
+              <input type="checkbox" name="doces" value="bicho-de-pe">
+              <label>Bicho de Pé</label>
+              <input type="checkbox" name="doces" value="brigadeiro-ninho">
+              <label>Brigadeiro Ninho</label>
+              <input type="checkbox" name="doces" value="cajuzinho">
+              <label>Cajuzinho</label>
+              <input type="checkbox" name="salgados" value="coxinha">
+              <label>Coxinha</label>
+              <input type="checkbox" name="salgados" value="risole">
+              <label>Risole</label>
+              <input type="checkbox" name="salgados" value="bolinha-de-queijo"> 
+              <label>Bolinha de Queijo</label>
+              <input type="checkbox" name="salgados" value="Esfiha">
+              <label>Esfiha</label>
+              <input type="checkbox" name="salgados" value="Quibe">
+              <label>Quibe</label>
+              <input type="checkbox" name="salgados" value="Crepe">
+              <label>Crepe</label>
+            
+            <p class="insercao-informacoes">Adicione mais informações, caso necessário.</p>         
             <textarea placeholder="Digite sua mensagem:"></textarea>
             <button type="submit">Enviar</button>        
     </form>
