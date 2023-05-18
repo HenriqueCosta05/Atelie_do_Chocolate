@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Site_Principal/Estilo/formulario.css"/>
+    <link rel="stylesheet" href="../Estilo/formulario.css"/>
     <!--Importação de fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +20,13 @@
 <body>
     <!--Repetição do cabeçalho-->
     <div class="rosa">
-        <img src="../Site_Principal/Imagens/logotipo.png" alt="logotipo" class="logotipo" />
+        <img src="../Imagens/logotipo.png" alt="logotipo" class="logotipo" />
         <nav class="itens-navegacao">
           <ul>
-            <li><a href="../Site_Principal/index.html">Home</a></li>
-            <li><a href="../Site_Principal/index.html">Serviços</a></li>
-            <li><a href="../Site_Principal/index.html">Galeria</a></li>
-            <li><a href="../Site_Principal/index.html">Avaliações</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Serviços</a></li>
+            <li><a href="../index.html">Galeria</a></li>
+            <li><a href="../index.html">Avaliações</a></li>
             <li><a href="#">Mais Informações</a></li>
           </ul>
         </nav>
@@ -37,47 +37,52 @@
     <!--Criação do formulário.-->
     <div class="corpo">
     <form class="formulario" method="post" action="https://formsubmit.co/henrique.costa10@fatec.sp.gov.br">
+      <input type="hidden" name="_subject" value="Nova Submissão de Formulário - Ateliê do Chocolate">
+      <input type="hidden" name="_captcha" value="false">
+
         <h1>Mais informações</h1>
     <p>Para mais informações, preencha o formulário a seguir. O prazo de resposta é de (a combinar) dias úteis.</p>
-    <input type="hidden" name="_next" value="https://ateliedochocolate.com.br/agradecimento.html">
+    <input type="hidden" name="_next" value="https://ateliedochocolate.netlify.app/formulario/agradecimento">
    <p class="insercao-informacoes">Digite seu nome:</p>
     <label for="text" type="text" name="Nome" class="campo nome"></label>
-            <input type="text" class="campo nome" placeholder="Nome: " required/>
+            <input type="text" name="Nome" class="campo nome" placeholder="Nome: " required/>
 
           <p class="insercao-informacoes">Digite seu e-mail:</p>
         <label for="email" name="Email" class="campo email"></label>
-            <input id="email" class="campo email" type="email" placeholder="Digite seu e-mail:" required />
+            <input id="email" name="Email" class="campo email" type="email" placeholder="Digite seu e-mail:" required />
 
             <p class="insercao-informacoes">Insira a quantidade de convidados: </p>
             <label for="convidados" class="campo convidados"></label>
             <input type="number" value="convidados" name="Convidados" min="0" max="500" placeholder="Quantidade de convidados: ">
 
             <p class="insercao-informacoes">Escolha os itens para sua festa: </p>
-              <input type="checkbox" name="doces" value="brigadeiro">
-              <label>Brigadeiro</label>
-              <input type="checkbox" name="doces" value="beijinho">
-              <label>Beijinho</label>
-              <input type="checkbox" name="doces" value="bicho-de-pe">
-              <label>Bicho de Pé</label>
-              <input type="checkbox" name="doces" value="brigadeiro-ninho">
-              <label>Brigadeiro Ninho</label>
-              <input type="checkbox" name="doces" value="cajuzinho">
-              <label>Cajuzinho</label>
-              <input type="checkbox" name="salgados" value="coxinha">
+              <input type="checkbox" name="Doces - Brigadeiro" value="Sim">
+              <label name="Brigadeiro">Brigadeiro</label>
+              <input type="checkbox" name="Doces - Beijinho" value="Sim">
+              <label name="Beijinho">Beijinho</label>
+              <input type="checkbox" name="Doces - Bicho de pé" value="Sim">
+              <label name="Bicho de pé">Bicho de Pé</label>
+              <input type="checkbox" name="Doces - Brigadeiro Ninho" value="Sim">
+              <label name="Brigadeiro Ninho">Brigadeiro Ninho</label>
+              <input type="checkbox" name="Doces - Cajuzinho" value="Sim">
+              <label name="Cajuzinho">Cajuzinho</label>
+              <input type="checkbox" name="Salgados - Coxinha" value="Sim">
               <label>Coxinha</label>
-              <input type="checkbox" name="salgados" value="risole">
+              <input type="checkbox" name="Salgados - Risole" value="Sim">
               <label>Risole</label>
-              <input type="checkbox" name="salgados" value="bolinha-de-queijo"> 
+              <input type="checkbox" name="Salgados - Bolinha de Queijo"" value="Sim"> 
               <label>Bolinha de Queijo</label>
-              <input type="checkbox" name="salgados" value="Esfiha">
+              <input type="checkbox" name="Salgados - Esfiha" value="Sim">
               <label>Esfiha</label>
-              <input type="checkbox" name="salgados" value="Quibe">
+              <input type="checkbox" name="Salgados - Quibe" value="Sim">
               <label>Quibe</label>
-              <input type="checkbox" name="salgados" value="Crepe">
+              <input type="checkbox" name="Salgados - Crepe" value="Sim">
               <label>Crepe</label>
             
+              <p class="insercao-informacoes">Insira a data estimada da festa: </label>
+              <input type="date" name="Data da Festa">
             <p class="insercao-informacoes">Adicione mais informações, caso necessário.</p>         
-            <textarea placeholder="Digite sua mensagem:"></textarea>
+            <textarea placeholder="Digite sua mensagem:" name="Mensagem"></textarea>
             <button type="submit">Enviar</button>        
     </form>
     </div>

@@ -6,32 +6,274 @@ body{
 }
 
 header{
-  position: sticky;
+  position: -webkit-sticky;
   top: 0%;
   right: 0;
   width: 100%;
   z-index: 9;
 }
 
-.texto {
-  margin: 10px;
+section {
+  display: block;
+}
+
+li {
+  list-style-type: square;
+}
+
+p, li, a{
+  font-family: 'Nunito', 'Raleway', sans-serif !important;
+  font-size: 16px;
+  color: #000;
+}
+
+.titulo-servico {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.introducao {
+  padding: 3rem;
   width: 100%;
+  background: #ffd9cb;
+}
+
+.introducao-servicos-div {
+  margin-top: 5%;
+}
+.texto {
+  display: inline-block;
+  background: rgba(255,240,235,255);
+  position: relative;
+  margin: 0.5em;
+  padding: 4rem;
+  line-height: 1.5rem;
+  width: 25%;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.parte-1, .parte-2, .parte-3{
+  width: 32%;
+  height: fit-content;
+}
+
+.perfil {
+  display: block;
+  width: 20%;
+  margin: 30px auto;
+  border-radius: 100%;
+}
+/* Estilização heading e paragrafo */
+
+.heading {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  display: inline;
+  font-family: 'raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  width: 50%;
+}
+
+.paragrafo {
+  width: 100%;
+  line-height: 2em;
+  position: relative;
+  justify-content: center;
+  text-align: left;
+}
+/* Estilizações específicas */
+.servicos-p {
   text-align: center;
 }
 
-.heading {
-  display: inline;
-  font-family: 'raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 36px;
-  width: 50%;
+h3.heading.missao {
+  font-size: 30px;
 }
 
-h3 > .sobre-nos {
+.bolos-h3, .doces-h3 {
   display: block;
-  position: absolute;
-  font-family: 'Nunito', sans-serif;
   width: 50%;
-  text-align: left;
+  margin: 1em auto;
+  text-align: center;
+}
+
+/* Divs */
+
+div.rodape {
+  display: block;
+}
+.apresentacao, .introducao-servicos-div {
+  width: 80%;
+  display: block;
+  margin: 3em auto;
+  text-align: center;
+}
+
+.servico-dir {
+  display: block;
+  margin-top: 2em;
+  width: 50%;
+  float: right;
+}
+
+.servico-esq {
+  display: inline-block;
+  width: 50%;
+  clear: left;
+  margin: 5em 20px;
+}
+
+.parte-1, .parte-2, .parte-3 {
+  width: 32%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Imagens */
+.imagens-bolos {
+  width: 45%;
+  display: inline-block;
+  position: relative;
+  left: 2%;
+}
+
+.imagem-principal-dir {
+  width: 40%;
+  height: 50%;
+  position: relative;
+  float: right;
+}
+
+.imagem-principal-esq, .imagem-principal-dir {
+  border-radius: 3%;
+}
+
+img.social {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  position: relative;
+  margin: 20px auto;
+  justify-content: center;
+
+}
+
+/* Ajustes Mobile */
+@media only screen and (max-width: 1000px){
+
+  .texto {
+    display: block;
+    background: rgba(255,240,235,255);
+    position: relative;
+    margin: 1em;
+    margin-left: 1em;
+    line-height: 1.5rem;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2em;
+    background: #ffd9cb;
+  }
+  
+  img.perfil {
+    width: 50%;
+    height: auto;
+  }
+
+  .paragrafo {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .apresentacao-p {
+    text-align: center;
+  }
+  
+  p.paragrafo.bolos-p {
+    text-align: center;
+    margin: 1em auto;
+    width: 80%;
+  }
+
+  div.imagens-bolos {
+    width: 80%;
+    display: block;
+    margin: 1em auto;
+  }
+  /*Divs */
+  div.servico-dir {
+    display: block;
+    width: 100%;
+    margin: 2em auto;
+    text-align: left;
+  }
+
+.itens-navegacao ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: -2px;
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  color: white;
+  padding: 4px;
+  background-color: #efabab;
+  border-radius: 10px 10px 0px 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.parte-1, .parte-2, .parte-3 {
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  background-color: rgba(255,240,235,255);
+}
+
+.regular.slider img {
+  width: 100%;
+  height: 50em;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header */
+.itens-navegacao ul li {
+  width: 5em;
+  height: 2em;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', Arial; 
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  background-color: #efabab;
+  border-radius: 10px 10px 0px 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logotipo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-left: 0;
+}
+
+} 
+
+
+
+header{
+  position: sticky;
+  top: 0%;
+  right: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .itens-navegacao {
@@ -46,7 +288,7 @@ h3 > .sobre-nos {
     vertical-align: super;
     float: left;
     margin-left: 58px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: absolute;
   }
 
@@ -56,10 +298,11 @@ h3 > .sobre-nos {
     margin-top: 4em;
     margin-left: -2px;
     font-size: 22px;
-    font-family: 'Montreal', Arial;
+    font-family: 'Raleway';
+    font-weight: 300;
     color: white;
-    padding: 4px;
-    background-color: #701e00;
+    padding: 2px;
+    background-color: #efabab;
     border-radius: 10px 10px 0px 10px;
     transition: transform 0.2s ease-in-out;
   }
@@ -70,20 +313,19 @@ h3 > .sobre-nos {
   }
   .itens-navegacao ul li:hover {
     transform: scale(1.1);
-    background-color: #a62c00;
-    box-shadow: 0px -5px 0px #ffffff;
+    background-color: #e8c2c2;
+    box-shadow: 0px -5px 0px;
   }
-
 
   .rosa {
     background: rgba(255,240,235,255);
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
   }
 
   .rosa-escuro {
     background: #ffd9cb;
-    padding-top: 0.7em;
+    padding-top: 0.8em;
     margin: 0;
     overflow: hidden;
   }
@@ -94,24 +336,24 @@ h3 > .sobre-nos {
   body {
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
-  .carousel-slide {
-    width: 34em;
-    margin-top: 2em;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
   footer {
+    display: block;
+    color: black;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: #a0a0a0;
+    background-color: rgba(255,240,235,255);
     box-shadow: black;
+  }
+
+
+  .itens-servicos ul li {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
   }
 
   @media (max-width: 1000px){
@@ -120,17 +362,18 @@ h3 > .sobre-nos {
       display: inline-block;
       margin-top: 6em;
       margin-left: -2px;
-      font-size: 22px;
-      font-family: 'Montreal', Arial;
+      font-size: 18px;
+      font-family: 'Raleway', Arial; 
+      font-weight: 300;
       color: white;
       padding: 4px;
-      background-color: #701e00;
+      background-color: #efabab;
       border-radius: 10px 10px 0px 10px;
       transition: transform 0.2s ease-in-out;
     }
 
     .logotipo {
-      width: 180px;
+      width: 100px;
       position: absolute;
       left: 50%;
       transform: translate(-50%);

@@ -16,46 +16,46 @@ header{
   
   
   .itens-navegacao {
-      display: flex;
-      justify-content: center;
-      margin-right: 0px;
-    }
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .logotipo {
+    width: 190px;
+    display: inline;
+    vertical-align: super;
+    float: left;
+    margin-left: 58px;
+    margin-top: 10px;
+    position: absolute;
+  }
+
+  .itens-navegacao ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: -2px;
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: white;
+    padding: 4px;
+    background-color: #efabab;
+    border-radius: 10px 10px 0px 10px;
+    transition: transform 0.2s ease-in-out;
+  }
   
-    .logotipo {
-      width: 190px;
-      display: inline;
-      vertical-align: super;
-      float: left;
-      margin-left: 58px;
-      margin-top: 20px;
-      position: absolute;
-    }
-  
-    .itens-navegacao ul li {
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 4em;
-      margin-left: -2px;
-      font-size: 22px;
-      font-family: 'Montreal', Arial;
-      color: white;
-      padding: 4px;
-      background-color: #701e00;
-      border-radius: 10px 10px 0px 10px;
-      transition: transform 0.2s ease-in-out;
-    }
-    
-    a:link, a:visited, a:hover, a:active {
-      text-decoration: none;
-      color: white;
-    }
-    .itens-navegacao ul li:hover {
-      transform: scale(1.1);
-      background-color: #a62c00;
-      box-shadow: 0px -5px 0px #ffffff;
-    }
-  
-  
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+  }
+  .itens-navegacao ul li:hover {
+    transform: scale(1.1);
+    background-color: #e8c2c2;
+    box-shadow: 0px -5px 0px #ffffff;
+  }
+
     .rosa {
       background: rgba(255,240,235,255);
       padding: 0;
@@ -70,27 +70,28 @@ header{
     }
 
     @media (max-width: 1000px){
-        .itens-navegacao ul li {
-          text-decoration: none;
-          display: inline-block;
-          margin-top: 6em;
-          margin-left: -2px;
-          font-size: 22px;
-          font-family: 'Montreal', Arial;
-          color: white;
-          padding: 4px;
-          background-color: #701e00;
-          border-radius: 10px 10px 0px 10px;
-          transition: transform 0.2s ease-in-out;
-        }
-    
-        .logotipo {
-          width: 180px;
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%);
-          margin-left: 0;
-        }
+    .itens-navegacao ul li {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 6em;
+      margin-left: -2px;
+      font-size: 18px;
+      font-family: 'Montreal', Arial; 
+      font-weight: 300;
+      color: white;
+      padding: 4px;
+      background-color: #efabab;
+      border-radius: 10px 10px 0px 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .logotipo {
+      width: 100px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      margin-left: 0;
+    }
       }
     
     /*Fim cabeçalho */
@@ -166,7 +167,7 @@ input[type="checkbox"] {
   width: 15px;
   height: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -177,7 +178,7 @@ input[type="checkbox"] {
 
 label {
   font-family: 'Nunito', sans-serif;
-  display: flex;
+  display: inline;
 }
 
 @media (max-width: 1440px) {
@@ -198,10 +199,8 @@ form {
   width: 500px;
   height: 100%;
   min-width: 400px;
-  background-color: #ffcece23;
   border-radius: 5px;
   box-shadow: 0 15px 30px linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
   margin: 100px auto;
-
 }
 }
