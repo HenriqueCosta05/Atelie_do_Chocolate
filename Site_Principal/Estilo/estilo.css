@@ -21,10 +21,10 @@ li {
   list-style-type: square;
 }
 
-p, li, a{
+p, li, a, h3{
   font-family: 'Nunito', 'Raleway', sans-serif !important;
   font-size: 16px;
-  color: #000;
+  color: #000 !important;
 }
 
 .titulo-servico {
@@ -40,6 +40,7 @@ p, li, a{
 
 .introducao-servicos-div {
   margin-top: 5%;
+  margin-bottom: 25%;
 }
 .texto {
   display: inline-block;
@@ -67,6 +68,7 @@ p, li, a{
 /* Estilização heading e paragrafo */
 
 .heading {
+  text-align: center;
   width: 100%;
   justify-content: center;
   text-align: center;
@@ -93,13 +95,16 @@ h3.heading.missao {
   font-size: 30px;
 }
 
-.bolos-h3, .doces-h3 {
+.servicos-h3 {
   display: block;
   width: 50%;
   margin: 1em auto;
   text-align: center;
 }
 
+.h1 {
+  font-size: 56px;
+}
 /* Divs */
 
 div.rodape {
@@ -112,18 +117,22 @@ div.rodape {
   text-align: center;
 }
 
-.servico-dir {
-  display: block;
-  margin-top: 2em;
-  width: 50%;
-  float: right;
+.geral-servicos {
+  width: 100%;
 }
 
-.servico-esq {
+.servico-cent {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.servico-esq, .servico-dir {
+  vertical-align: text-top;
   display: inline-block;
-  width: 50%;
-  clear: left;
-  margin: 5em 20px;
+  width: 40%;
+  margin-left: 8em;
+  margin-bottom: 3em;
+  ;
 }
 
 .parte-1, .parte-2, .parte-3 {
@@ -133,22 +142,12 @@ div.rodape {
 }
 
 /* Imagens */
-.imagens-bolos {
-  width: 45%;
-  display: inline-block;
-  position: relative;
-  left: 2%;
-}
-
-.imagem-principal-dir {
-  width: 40%;
-  height: 50%;
-  position: relative;
-  float: right;
-}
-
-.imagem-principal-esq, .imagem-principal-dir {
-  border-radius: 3%;
+img.imagem-principal-esq, img.imagem-principal-dir{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
 }
 
 img.social {
@@ -193,23 +192,13 @@ img.social {
     text-align: center;
   }
   
-  p.paragrafo.bolos-p {
-    text-align: center;
-    margin: 1em auto;
-    width: 80%;
-  }
 
-  div.imagens-bolos {
-    width: 80%;
-    display: block;
-    margin: 1em auto;
-  }
   /*Divs */
-  div.servico-dir {
+  .servico-esq, .servico-dir {
     display: block;
-    width: 100%;
-    margin: 2em auto;
-    text-align: left;
+    width: 90%;
+    margin-left: 2em;
+    justify-content: center;
   }
 
 .itens-navegacao ul li {
@@ -264,6 +253,15 @@ li {
   margin-left: 0;
 }
 
+/*Imagens */
+img.imagem-principal-esq, img.imagem-principal-dir{
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  height: 45%;
+  border-radius: 100%;
+}
+
 } 
 
 
@@ -300,7 +298,7 @@ header{
     font-size: 22px;
     font-family: 'Raleway';
     font-weight: 300;
-    color: white;
+    color: #efabab !important;
     padding: 2px;
     background-color: #efabab;
     border-radius: 10px 10px 0px 10px;
@@ -379,4 +377,43 @@ header{
       transform: translate(-50%);
       margin-left: 0;
     }
+  }
+/* Rodapé */
+  li {
+    list-style-type: none;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 240, 235, 255);;
+    box-shadow: black;
+    text-align: center;
+    
+  }
+
+  footer h1 {
+    font-family: 'Nunito', 'Raleway', sans-serif ;
+    padding-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    z-index: 1;
+  }
+  
+  .social ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social ul a {
+    display: inline-block;
+    padding: 4px;
+    
+  }
+  
+  .social ul li a img {
+    max-width: 35px;
   }
