@@ -21,9 +21,8 @@ li {
   list-style-type: square;
 }
 
-p, li, a, h3{
+p, li, a:not(.header-titulo), h1, table {
   font-family: 'Nunito', 'Raleway', sans-serif !important;
-  font-size: 16px;
   color: #000 !important;
 }
 
@@ -38,9 +37,8 @@ p, li, a, h3{
   background: #ffd9cb;
 }
 
-.introducao-servicos-div {
-  margin-top: 5%;
-  margin-bottom: 25%;
+div.introducao-servicos-div {
+  margin: 5em auto;
 }
 .texto {
   display: inline-block;
@@ -66,7 +64,13 @@ p, li, a, h3{
   border-radius: 100%;
 }
 /* Estilização heading e paragrafo */
-
+h1.heading-titulo {
+  font-size: 48px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;  
+  text-align: center;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
 .heading {
   text-align: center;
   width: 100%;
@@ -102,8 +106,11 @@ h3.heading.missao {
   text-align: center;
 }
 
-.h1 {
-  font-size: 56px;
+p.paragrafo-tabela {
+  width: 100%;
+  line-height: 1.5em;
+  margin: 0 auto;
+  text-align: center;
 }
 /* Divs */
 
@@ -119,25 +126,24 @@ div.rodape {
 
 .geral-servicos {
   width: 100%;
+  background: #ffd9cb;
+  padding: 2%;
 }
 
-.servico-cent {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-}
 .servico-esq, .servico-dir {
   vertical-align: text-top;
   display: inline-block;
-  width: 40%;
-  margin-left: 8em;
-  margin-bottom: 3em;
-  ;
+  width: 30%;
+  background: rgba(255, 240, 235, 255);
+  border-radius: 20px;
+  margin: 2em 1.3em;
+  padding: 2%;
+  height: 520px;
 }
 
 .parte-1, .parte-2, .parte-3 {
-  width: 32%;
-  height: 400px;
+  width: 30%;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -145,9 +151,8 @@ div.rodape {
 img.imagem-principal-esq, img.imagem-principal-dir{
   display: block;
   margin: 0 auto;
-  width: 30%;
-  height: 30%;
-  border-radius: 100%;
+  width: 100px;
+  height: 100px;
 }
 
 img.social {
@@ -157,11 +162,45 @@ img.social {
   position: relative;
   margin: 20px auto;
   justify-content: center;
-
 }
 
+
+/* Tabela Valores */
+.tabela {
+  display: flex;
+  margin: auto
+}
+
+.tabela-valores {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 5em;
+  font-size: 16px;
+  margin: 3em auto;
+}
+
+.tabela-valores thead {
+  background: #efabab;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.tabela-valores tbody tr td:nth-child(1){width:40%}
+.tabela-valores tbody tr td:nth-child(2){width:50%}
+.tabela-valores th, .tabela-valores td {padding: 1em 0}
+
+.tabela-valores tbody tr:nth-child(n+1){
+  background:rgba(255, 240, 235, 255);
+}
+
+@media only screen and (min-width: 1200px) {
+  .tabela-valores tbody tr td:nth-child(1){width:40%}
+  .tabela-valores tbody tr td:nth-child(2){width:50%}
+  .tabela-valores th, .tabela-valores td {padding: 1em 0}
+}
 /* Ajustes Mobile */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
 
   .texto {
     display: block;
@@ -198,6 +237,7 @@ img.social {
     display: block;
     width: 90%;
     margin-left: 2em;
+    padding: 2%;
     justify-content: center;
   }
 
@@ -232,36 +272,53 @@ li {
 }
 
 /* Header */
-.itens-navegacao ul li {
-  width: 5em;
-  height: 2em;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Raleway', Arial; 
-  font-weight: 300;
-  text-align: center;
-  color: white;
-  background-color: #efabab;
-  border-radius: 10px 10px 0px 10px;
-  transition: transform 0.2s ease-in-out;
-}
+  .logotipo {
+    width: 190px;
+    display: inline;
+    vertical-align: super;
+    float: left;
+    margin-left: 58px;
+    margin-top: 10px;
+    position: absolute;
+  }
 
-.logotipo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  margin-left: 0;
-}
-
+  .itens-navegacao ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: -2px;
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: white;
+    padding: 4px;
+    background-color: #efabab;
+    border-radius: 10px 10px 0px 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+  }
+  .itens-navegacao ul li:hover {
+    transform: scale(1.1);
+    background-color: #e8c2c2;
+    box-shadow: 0px -5px 0px #ffffff;
+  }
 /*Imagens */
 img.imagem-principal-esq, img.imagem-principal-dir{
   display: block;
   margin: 0 auto;
-  width: 45%;
-  height: 45%;
-  border-radius: 100%;
+  width: 75px;
+  height: 75px;
 }
 
+.geral-servicos {
+  width: 100%;
+  background: #ffd9cb;
+  margin-top: 1em;
+}
 } 
 
 
@@ -295,7 +352,7 @@ header{
     display: inline-block;
     margin-top: 4em;
     margin-left: -2px;
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'Raleway';
     font-weight: 300;
     color: #efabab !important;
@@ -387,13 +444,13 @@ header{
     bottom: 0;
     width: 100%;
     height: auto;
-    background: rgba(255, 240, 235, 255);;
+    background: rgba(255, 240, 235, 255);
     box-shadow: black;
     text-align: center;
     
   }
 
-  footer h1 {
+  footer h3.rodape-texto {
     font-family: 'Nunito', 'Raleway', sans-serif ;
     padding-top: 20px;
     padding: 10px;
