@@ -90,6 +90,15 @@ h1.heading-titulo {
   justify-content: center;
   text-align: left;
 }
+
+.galeria-heading {
+  background-color: rgba(255, 240, 235, 255);
+  margin: 1em auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Estilizações específicas */
 .servicos-p {
   text-align: center;
@@ -320,8 +329,6 @@ img.imagem-principal-esq, img.imagem-principal-dir{
   margin-top: 1em;
 }
 } 
-
-
 
 header{
   position: sticky;

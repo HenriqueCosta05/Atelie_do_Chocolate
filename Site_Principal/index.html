@@ -14,6 +14,7 @@
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check.css' rel='stylesheet'>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="Estilo/galeria-imagens.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!--Importação de Fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,7 +79,6 @@
       </script>
     </main>
   </div>
-
 
   <div class="apresentacao">
     <img src="Imagens/KETLYN.png" alt="Quem é Ketlyn?" class="perfil">
@@ -146,7 +146,6 @@
 
       <div class="servico-esq">
         <img class="imagem-principal-esq" src="../Site_Principal/Imagens/Icones/Salgados.png">
-        <img class="imagem-principal-esq" src="../Site_Principal/Imagens/Icones/Salgado.png">
         <h3 class="heading servicos-h3">Salgados</h3>
         <p class="paragrafo">Dentre eles nós temos
           Quibe, 
@@ -159,9 +158,7 @@
       </div>
 
       <div class="servico-dir">
-        <img class="imagem-principal-dir" src="../Site_Principal/Imagens/Icones/Lanches.png">
-
-        <img class="imagem-principal-dir" src="../Site_Principal/Imagens/Icones/Lanches.jpg">
+        <img class="imagem-principal-esq" src="../Site_Principal/Imagens/Icones/Lanches.png">
         <h3 class="heading servicos-h3">Lanches</h3>
         <p class="paragrafo">Lanches feitos com pães artesanais, montados com todo o carinho do mundo para encantar os seus convidados a cada mordida.
           </p>
@@ -182,15 +179,8 @@
             <p class="paragrafo">Carrinho gourmet de crepes suíços doces e salgados é também uma grande atração para compor o cardápio da festa, os convidades tem a possibilidade de escolher dentre 11 sabores salgados e 4 sabores doces, ver o seu crepe ser preparado na hora e degustar de um delicioso crepe fresquinho e quentinho.</p>
           </div>
           <div class="servico-dir">
-            <img class="imagem-principal-dir" src="../Site_Principal/Imagens/Icones/Cascata_Chocolate.jpg">
+            <img class="imagem-principal-esq" src="../Site_Principal/Imagens/Icones/Carrinho_gourmet.png">
             <h3 class="heading servicos-h3">Cascata de Chocolate</h3>
-            <p class="paragrafo">Carrinho gourmet de Cascata de chocolate ao leite nobre servida à vontade com 5 opções de frutas frescas mais 5 acompanhamentos. O delicioso fondue com cascata de chocolate será a atração do seu evento. </p>
-            <h3 class="heading servicos-h3">Carrinho Gourmet de Crepe Suíço</h3>
-            <p class="paragrafo">Carrinho gourmet de crepes suíços doces e salgados é também uma grande atração para compor o cardápio da festa, os convidades tem a possibilidade de escolher dentre 11 sabores salgados e 4 sabores doces, ver o seu crepe ser preparado na hora e degustar de um delicioso crepe fresquinho e quentinho.</p>
-          </div>
-          <div class="servico-dir">
-            <img class="imagem-principal-dir" src="../Site_Principal/Imagens/Icones/Carrinho_gourmet.png">
-            <h3 class="heading servicos-h3">Carrinho Gourmet de Cascata de Chocolate</h3>
             <p class="paragrafo">Carrinho gourmet de Cascata de chocolate ao leite nobre servida à vontade com 5 opções de frutas frescas mais 5 acompanhamentos. O delicioso fondue com cascata de chocolate sendo atração do seu evento. Tenho certeza que ficará marcado para os seus convidados a sensação de desfrutar de um delicioso chocolate nobre com frutas. </p>
           </div>
           <div class="servico-esq">
@@ -198,21 +188,246 @@
             <h3 class="heading servicos-h3">Serviços de Buffet</h3>
             <p class="paragrafo">Trabalhamos com serviço de buffet a domicilio com cardápio infantil que serve para qualquer tipo de evento. São salgados, doces, bolos, lanches, assados, garçom e copeira. Sua festa sem dor de cabeça, tudo do jeitinho que você sonhou para aproveitar seus convidados e o momento do inicio ao fim. Consulte disponibilidade, peça um orçamento e se surpreenda com as possibilidades de ter o evento perfeito.</p>
           </div>
+    </div>     
+    <div class="introducao-servicos-div">
+      <h1 class="heading-titulo">Galeria de Imagens</h1>
+    <p class="paragrafo servicos-p">Confira mais imagens de trabalhos já realizados pelo Ateliê do Chocolate!</p>
     </div>
-
-              <div class="swiper-wrapper">
-
-                <div class="card swiper-slide">
-                  <div class="card__image">
-                    <img src="../Site_Principal/Imagens/Imagens-Carrossel/Buffet/Buffet.jpg" alt="card image">
-                  </div>
-                  <div class="card__content">
-                    <span class="card__title">Serviços de Buffet</span>
-                    <span class="card__name">Ateliê do Chocolate</span>
-                    <p class="card__text"></p>
-                    <button class="card__btn"><a href="../Site_Principal/galeria.html">Ver mais</a></button>
-                  </div>
-                </div>
+    <section id="galeria">
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        .swiper {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+    
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+    </head>
+    
+      <!-- Galeria 1 - Bolos  -->
+      <h3 class="heading galeria-heading">Bolos</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo2.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo3.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo4.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo5.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo6.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo7.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo8.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo9.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Bolos/Bolo10.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+      <!--Galeria Doces-->
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        .swiper {
+          display: block;
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+    
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+    </head>
+    
+    <h3 class="heading galeria-heading">Doces</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces2.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces3.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces4.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces5.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces6.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Doces/Doces7.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+      <h3 class="heading galeria-heading">Salgados</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados2.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados3.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../Site_Principal/Imagens/Imagens-Carrossel/Salgados/Salgados7.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+    </section>
+  
+  <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     </section>
     <div class="introducao-servicos-div">
     <h1 class="heading-titulo">Tabela de Valores</h1>
