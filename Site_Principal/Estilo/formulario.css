@@ -98,7 +98,6 @@ header{
 
 
 body {
-background: linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
 background-image: url(../Imagens/background.png);
 }
 
@@ -138,7 +137,7 @@ button {
     min-width: 320px;
     border: none;
     border-radius: 5px;
-    background: #ecaed4;
+    background: #efabab;
     color: #fff;
     font-weight: bold;
 }
@@ -150,12 +149,12 @@ button:hover {
     min-width: 320px;
     border: none;
     border-radius: 5px;
-    background: #eaa7d2;
+    background: #e8c2c2;
 }
 
 h1 {
     text-align: center;
-    font-family: raleway;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -164,13 +163,9 @@ p {
 }
 
 input[type="checkbox"] {
-  width: 15px;
-  height: 15px;
-  display: flex;
-  justify-content: left;
-  font-family: 'Nunito', sans-serif;
+  position: relative;
+  display: inline-block;
 }
-
 .insercao-informacoes {
   padding-top: 25px;
   text-align: center;

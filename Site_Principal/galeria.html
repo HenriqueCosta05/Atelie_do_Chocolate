@@ -1,51 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Estilo/estilo.css" />
-        <link rel="stylesheet" href="./Estilo/reset.min.css">
-        <link rel="stylesheet" href="./Estilo/default.css">
-        <link rel="stylesheet" href="./Estilo/style.css">
-        <link rel="stylesheet" href="./Estilo/carousel.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
-        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check.css' rel='stylesheet'>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="Estilo/galeria-imagens.css">
-        <!--Importação de Fontes-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-        <link rel="icon" href="Imagens/Icones/Chocolate.png">
-        <title>Ateliê do Chocolate</title>
-      </head>
-      <header>
-        <div class="rosa">
-          <img src="Imagens/logotipo.png" alt="logotipo" class="logotipo" />
-          <nav class="itens-navegacao">
-            <ul>
-              <li><a href="#" class="header-titulo">Home</a></li>
-              <li><a href="#servicos" class="header-titulo">Serviços</a></li>
-              <li><a href="#galeria" class="header-titulo">Galeria</a></li>
-              <li><a href="#avalicoes" class="header-titulo">Avaliações</a></li>
-              <li><a href="Formulario/formulario.html" class="header-titulo">Mais Informações</a></li>
-            </ul>
-          </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Estilo/estilo.css" />
+    <link rel="stylesheet" href="./Estilo/reset.min.css" />
+    <link rel="stylesheet" href="./Estilo/default.css" />
+    <link rel="stylesheet" href="./Estilo/style.css" />
+    <link rel="stylesheet" href="./Estilo/carousel.css" />
+    <link rel="stylesheet" href="./Estilo/avaliacoes.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/check.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Estilo/galeria-imagens.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="Estilo/galeria-imagens.css" />
+    <!--Importação de Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Imagens/Icones/Chocolate.png" />
+    <title>Ateliê do Chocolate</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="rosa">
+        <img src="Imagens/logotipo.png" alt="logotipo" class="logotipo" />
+        <nav class="itens-navegacao">
+          <ul>
+            <li><a href="index.html" class="header-titulo">Home</a></li>
+            <li>
+              <a href="index.html#servicos" class="header-titulo">Serviços</a>
+            </li>
+            <li>
+              <a href="index.html#galeria" class="header-titulo">Galeria</a>
+            </li>
+            <li>
+              <a href="index.html#avaliacoes" class="header-titulo"
+                >Avaliações</a
+              >
+            </li>
+            <li>
+              <a href="Formulario/formulario.html" class="header-titulo"
+                >Mais Informações</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rosa-escuro"></div>
+    </header>
+    <div class="container">
+      <h1 class="heading"><span></span></h1>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Azul.jpg"
+            alt="Bolo Azul"
+          />
         </div>
-        <div class="rosa-escuro">
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Azulado.png"
+            alt="Bolo Azulado"
+          />
         </div>
-      </header>
-<body>
-    
-</body>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Azulado2.jpg"
+            alt="Bolo Azulado2"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="Imagens/Bolos/Bolo Balão.png"
+          alt="Bolo Balão"">
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Barbie.png"
+            alt="Bolo Barbie"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Borboleta.png"
+            alt="Bolo Boboleta"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Boteco.png"
+            alt="Bolo Boteco"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Branca-Neve.png"
+            alt="Bolo Branca de Branca-Neve"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo branco-amarelo.png"
+            alt="Bolo branco-amarelo"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Branco-Rosas.jpg"
+            alt="Bolo Branco-Rosas"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Branco.png"
+            alt="Bolo Branco"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Chapolin.png"
+            alt="Bolo Chapolin"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Cobra.png"
+            alt="Bolo Cobra"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Coelho.png"
+            alt="Bolo Coelho"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Dragon-Ball.png"
+            alt="Bolo Dragon-Ball"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Fazendinha.png"
+            alt="Bolo Fazendinha"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Futebol.png"
+            alt="Bolo Futebol"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Galinha-Pintadinha.png"
+            alt="Bolo Galinha-Pintadinha"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Hallowen.png"
+            alt="Bolo Hallowen"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Harry-Potter.png"
+            alt="Bolo Harry-Potter"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Mundo-Bita.png"
+            alt="Bolo Mundo-Bita"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/bolo passarinho.png"
+            alt="Bolo passarinho"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Poderoso-Chefinho.png"
+            alt="Bolo Poderoso-Chefinho"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Pokemon.png"
+            alt="Bolo Pokemon"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Rosa-Branca.png"
+            alt="bolo Rosa-Branca"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Roxo.png"
+            alt="Bolo Roxo"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Selva.png"
+            alt="Bolo Selva"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Stick.png"
+            alt="Bolo Stick"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Bolos/Bolo Toy-Story.png"
+            alt="Bolo Toy-Story"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Bolos/Bolo10.png"
+            alt="Bolo10"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Bolos/Bolo6.png"
+            alt="Bolo6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Bolos/Bolo8.png"
+            alt="Bolo8"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Bolos/Bolo9.png"
+            alt="Bolo9"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Beijinho.jpg"
+            alt="Beijinho"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Brigadeiro Verde.jpg"
+            alt="Brigadeiro Verde"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Brigadeiro Vermelho.jpg"
+            alt="Brigadeiro Vermelho"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Brigadeiro.jpg"
+            alt="Brigadeiro"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Brigadeiro2.jpg"
+            alt="Brigadeiro2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Brigadeiro3.jpg"
+            alt="Brigadeiro3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/doces2.jpg"
+            alt="Doces2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/Doces3.png"
+            alt="Doces3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/Doces4.png"
+            alt="Doces4"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/Doces5.png"
+            alt="Doces5"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/Doces6.png"
+            alt="Doces6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Imagens-Carrossel/Doces/Doces7.png"
+            alt="Doces7"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Coxinha.jpg"
+            alt="Coxinha"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Esfiha aberta.jpg"
+            alt="Esfiha aberta"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Esfiha.jpg"
+            alt="Esfiha"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Kibe.jpg"
+            alt="Kibe"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mix Salgado1.jpg"
+            alt="Mix Salgado1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/mix salgados2.jpg"
+            alt="Mix salgados2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mini-Pizza2.jpg"
+            alt="Mini-Pizza2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mini-Pizza.jpg"
+            alt="Mini-Pizza"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/producao2.jpg"
+            alt="producao2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mini-pastel3.jpg"
+            alt="Mini-pastel3"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mini-Pastel1.jpg"
+            alt="Mini-Pastel1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Producao1.jpg"
+            alt="Producao1"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Mini Hamburguer.jpg"
+            alt="Mini Hamburguer"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Hot-Dog.jpg"
+            alt="Hot-Dog"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Crepe3.jpg"
+            alt="Crepe3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Crepe2.jpg"
+            alt="crepe2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Crepe recheado.jpg"
+            alt="crepe recheado"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Recheio crepe2.jpg"
+            alt="recheio crepe2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Carrinho crepe 3.jpg"
+            alt="Carrinho"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Crepe carrinho.jpg"
+            alt="carrinho crepe"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Carrinho Duplo.jpg"
+            alt="Duplo"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Carrinho Gourmet 2.jpg"
+            alt="Gourmet"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Carrinho Gourmet2.jpg"
+            alt="Gourmet"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/carrinho pipoca.jpg"
+            alt="pipoca"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/cascata.jpg"
+            alt="cascata"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Cascata2.jpg"
+            alt="Cascata2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            class="gallery-image"
+            src="Imagens/Drive/Drive/Cascata3.jpg"
+            alt="Cascata3"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
