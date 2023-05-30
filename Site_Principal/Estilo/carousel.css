@@ -1,46 +1,22 @@
 /*ESTILIZAÇÃO CARROSSEL - PÁGINA PRINCIPAL*/
 
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .slider {
-      width: 92%;
-      margin: 0px auto;
-      margin-top: 30px;
-      margin-bottom: 30px;
-  }
-
-  .line {
-    background-color: #efabab;
-  }
-
-  .slick-slide {
-    margin: 0px 0px 0px 0px;
-  }
-
-  .slick-slide img {
-    width: 100%;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-      color: rgb(149, 62, 0);
-  }
+  /* Para desktop */
   
-.slick-dots li button:before {
-  font-size: 10px; 
-}
+     .carousel {
+      display: block;
+      width: 92%;
+      height: auto;
+      margin: 100px auto;
+      margin-bottom: 300px;
 
-  .slick-prev,
-  .slick-next {
-  left: 0;
-  right: 0;
   }
+
+  .image {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+
 
   

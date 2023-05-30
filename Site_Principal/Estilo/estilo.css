@@ -1,53 +1,82 @@
 /*ESTILIZAÇÃO GERAL*/
 
-body{
+html {
+  height: 100%;
+  width: 100%;
+}
+  body{
   background-image: url(../Imagens/background.png);
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 header {
   z-index: 20;
   position: fixed;
+  height: 120px;
 }
-.itens-navegacao {
+
+.container-fluid {
+    width: 100%;
+  }
+  .navbar-nav {
     display: flex;
     justify-content: center;
-    margin-right: 0px;
+    align-items: center;
+    text-align: center;
+  }
+    .logotipo {
+    width: 150px;
+    display: flex;
+    float: left;
+    margin-left: 1em;
+    }
+
+  .container-fluid ul li {
+    text-decoration: none;
+    display: inline-flex;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .navbar-brand {
+    padding-right: 5em;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+
+  }
+
+  .rosa {
+    background: rgba(255,240,235,255);
+    overflow: hidden;
+  }
+
+  .rosa-escuro {
+    background: #ffd9cb;
+    height: 1em;
+    margin: 0;
+    overflow: hidden;
   }
 
   .logotipo {
-    width: 190px;
-    display: inline;
-    vertical-align: super;
+    width: 200px;
+    height: 100px;
+    display: flex;
     float: left;
-    margin-left: 58px;
-    margin-top: 10px;
-    position: absolute;
-  }
-
-  .itens-navegacao ul li {
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 4em;
-    margin-left: -2px;
-    font-size: 26px;
-    font-family: 'Raleway';
-    font-weight: 300;
-    color: #efabab !important;
-    padding: 2px;
-    background-color: #efabab;
-    border-radius: 10px 10px 0px 10px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: white;
-  }
-  .itens-navegacao ul li:hover {
-    transform: scale(1.1);
-    background-color: #e8c2c2;
-    box-shadow: 0px -5px 0px;
-  }
+    margin-left: 1em;
+    }
 
 li {
   list-style-type: square;
@@ -56,11 +85,6 @@ li {
 p, li, a:not(.header-titulo), h1, table {
   font-family: 'Nunito', 'Raleway', sans-serif !important;
   color: #000 !important;
-}
-
-.titulo-servico {
-  text-transform: uppercase;
-  font-size: 16px;
 }
 
 section#introducao {
@@ -95,21 +119,20 @@ div.introducao-servicos-div {
 /* Estilização heading e paragrafo */
 h1.heading-titulo {
   font-size: 48px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;  
-  text-align: center;
-  font-weight: lighter;
-  text-transform: capitalize;
+font-family: 'Lobster', cursive;
+
 }
-.heading {
+h3.heading {
+  margin-bottom: 10px;
   text-align: center;
   width: 100%;
   justify-content: center;
   text-align: center;
   padding: 0;
-  display: inline;
+  display: flex;
   font-family: 'raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 32px;
-  width: 50%;
+  width: 100%;
 }
 
 p.paragrafo {
@@ -146,6 +169,7 @@ p.paragrafo-tabela {
 
 div.rodape {
   display: block;
+  margin: 0;
 }
 .apresentacao, .introducao-servicos-div {
   z-index: 10;
@@ -172,7 +196,7 @@ div.rodape {
   border-radius: 20px;
   margin: 2em 1.3em;
   padding: 2%;
-  height: 600px;
+  height: 650px;
 }
 
 /* Imagens */
@@ -233,10 +257,6 @@ img.card-img-top {
 }
 /* Ajustes Mobile */
 @media only screen and (max-width: 1200px){
-
-  header.menu-desktop {
-    display: none;
-  }
   .servico {
     height: fit-content;
   }
@@ -294,11 +314,10 @@ img.imagem-principal {
 } 
 
 header{
-  position: sticky;
   top: 0%;
   right: 0;
   width: 100%;
-  z-index: 999;
+  height: 200px;
 }
 
 
@@ -327,6 +346,7 @@ header{
     list-style-type: none;
   }
   footer {
+    margin: 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -388,7 +408,8 @@ header{
     justify-content: center;
     border: none;
   }
-  a.btn:hover {
+  a.btn:hover,a.btn::before, a.btn::after
+ {
     background: #e8c2c2;
   }
 
@@ -399,176 +420,4 @@ header{
     margin: 10px auto;
   }
 
-  /* Menu Hamburguer */
-
-#sidebarMenu {
-  height: fit-content;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  transform: translateY(-63%);
-  transition: transform 250ms ease-in-out;
-  background: rgba(255, 240, 235, 255);
-  z-index: 5;
-
-
-}
-
-.sidebarMenuInner {
-  margin: 0;
-  padding: 0;
-
-}
-
-.sidebarMenuInner li {
-  list-style: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 34vw;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px;
-  cursor: pointer;
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
-}
-
-.sidebarMenuInner li span {
-  display: block;
-  font-size: 16px;
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.sidebarMenuInner li a {
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
-
-}
-
-input[type="checkbox"]:checked~#sidebarMenu {
-  transform: translateX(0);
-}
-
-input[type=checkbox] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none;
-}
-
-.sidebarIconToggle {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: absolute;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
-  top: 22px;
-  left: 15px;
-  height: 22px;
-  width: 22px;
-}
-
-.spinner {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #000000;
-}
-
-.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-
-.diagonal.part-1 {
-  position: relative;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  float: left;
-}
-
-.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  opacity: 0;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(135deg);
-  margin-top: 8px;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(-135deg);
-  margin-top: -9px;
-}
-
-.hamburguer {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  header {
-    display: none;
-  }
-
-  .hamburguer {
-    display: block;
-    z-index: 900;
-    position: sticky;
-  }
-
-  .logo {
-    position: relative;
-    width: 100%;
-    background: rgba(255, 240, 235, 255);
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .logo img {
-    width: 30vmax;
-    display:block;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    border-radius: 1rem;
-  }
-
-  .slider {
-    margin-top: 21vmax;
-  }
-}
-
-@media (max-width: 1200px){
-  .slider {
-    width: 94%;
-    margin: 0px auto;
-    margin-top: 16.5vmax;
-    margin-bottom: 0px;
-    z-index: 3;
-  }
-}
+ 
