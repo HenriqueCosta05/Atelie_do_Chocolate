@@ -47,18 +47,12 @@ header {
   }
 
   .navbar-brand {
-    padding-right: 5em;
+    display: inline-block;
+    padding-right: 50px;
   }
 
   .navbar-toggler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28235, 171, 171, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    display: inline-block;
   }
 
   .rosa {
@@ -88,6 +82,7 @@ li {
 p, li, a:not(.header-titulo), h1, table {
   font-family: 'Nunito', 'Raleway', sans-serif !important;
   color: #000 !important;
+  text-decoration: none;
 }
 
 section#introducao {
@@ -119,6 +114,7 @@ div.introducao-servicos-div {
   margin: 30px auto;
   border-radius: 100%;
 }
+
 /* Estilização heading e paragrafo */
 h1.heading-titulo {
   font-size: 48px;
@@ -162,12 +158,6 @@ h3.heading.missao {
   text-align: center;
 }
 
-p.paragrafo-tabela {
-  width: 100%;
-  line-height: 1.5em;
-  margin: 0 auto;
-  text-align: center;
-}
 /* Divs */
 
 div.rodape {
@@ -224,48 +214,14 @@ img.card-img-top {
   height: 290px;
 }
 
-/* Tabela Valores */
-.tabela {
-  display: flex;
-  margin: auto;
-}
-
-.tabela-valores {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 5em;
-  font-size: 16px;
-  margin: 3em auto;
-}
-
-.tabela-valores thead {
-  background: #efabab;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.tabela-valores tbody tr td:nth-child(1){width:40%}
-.tabela-valores tbody tr td:nth-child(2){width:50%}
-.tabela-valores th, .tabela-valores td {padding: 1em 0}
-
-.tabela-valores tbody tr:nth-child(n+1){
-  background:rgba(255, 240, 235, 255);
-}
-
-@media only screen and (min-width: 1200px) {
-  .tabela-valores tbody tr td:nth-child(1){width:40%}
-  .tabela-valores tbody tr td:nth-child(2){width:50%}
-  .tabela-valores th, .tabela-valores td {padding: 1em 0}
-}
 /* Ajustes Mobile */
-@media only screen and (max-width: 1200px){
+@media (min-width: 100px) and (max-width: 1200px){
   .servico {
     height: fit-content;
   }
   
   img.perfil {
-    width: 50%;
+    width: 200px;
     height: auto;
   }
 
@@ -287,7 +243,7 @@ img.card-img-top {
   /*Divs */
   .servico {
     display: block;
-    width: 90%;
+    width: 100%;
     margin: 1em auto;
     padding: 2%;
     justify-content: center;
@@ -304,7 +260,7 @@ img.imagem-principal {
 .geral-servicos {
   width: 100%;
   background: #ffd9cb;
-  margin: 1em auto;
+  margin: 1em 0;
 }
 
   div.title {
