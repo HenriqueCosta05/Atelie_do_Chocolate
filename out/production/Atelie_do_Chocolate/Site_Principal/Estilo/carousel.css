@@ -1,0 +1,22 @@
+/*ESTILIZAÇÃO CARROSSEL - PÁGINA PRINCIPAL*/
+
+  /* Para desktop */
+  
+     .carousel {
+      display: block;
+      width: 92%;
+      height: auto;
+      margin: 100px auto;
+      margin-bottom: 300px;
+
+  }
+
+  .image {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  

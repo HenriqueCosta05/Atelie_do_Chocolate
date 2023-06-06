@@ -1,0 +1,381 @@
+/*ESTILIZAÇÃO GERAL*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+  body{
+  background-image: url(../Imagens/background.png);
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  z-index: 20;
+  position: fixed;
+  height: 120px;
+}
+
+.container-fluid {
+    width: 100%;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    .logotipo {
+    width: 150px;
+    display: flex;
+    float: left;
+    margin-left: 1em;
+    }
+
+  .container-fluid ul li {
+    text-decoration: none;
+    display: inline-flex;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    padding-right: 50px;
+  }
+
+  .navbar-toggler {
+    display: inline-block;
+  }
+
+  .rosa {
+    background: rgba(255,240,235,255);
+    overflow: hidden;
+  }
+
+  .rosa-escuro {
+    background: #ffd9cb;
+    height: 1em;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .logotipo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    float: left;
+    margin-left: 1em;
+    }
+
+li {
+  list-style-type: square;
+}
+
+p, li, a:not(.header-titulo), h1, table {
+  font-family: 'Nunito', 'Raleway', sans-serif !important;
+  color: #000 !important;
+  text-decoration: none;
+}
+
+section#introducao {
+  z-index: 10;
+  padding: 3rem;
+  width: 100%;
+  background: #ffd9cb;
+}
+
+div.introducao-servicos-div {
+  margin: 5em auto;
+}
+
+.texto {
+  display: inline-block;
+  background: rgba(255,240,235,255);
+  position: relative;
+  margin: 0.5em auto;
+  padding: 4rem;
+  line-height: 1.5rem;
+  width: 25%;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.perfil {
+  display: block;
+  width: 20%;
+  margin: 30px auto;
+  border-radius: 100%;
+}
+
+/* Estilização heading e paragrafo */
+h1.heading-titulo {
+  font-size: 48px;
+font-family: 'Lobster', cursive;
+
+}
+h3.heading {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  font-family: 'raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  width: 100%;
+}
+
+p.paragrafo {
+  width: 100%;
+  line-height: 2em;
+  position: relative;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Estilizações específicas */
+p.paragrafo.servicos-p {
+  text-align: center;
+}
+
+h3.heading.missao {
+  font-size: 30px;
+}
+
+.servicos-h3 {
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+/* Divs */
+
+div.rodape {
+  display: block;
+  margin: 0;
+}
+.apresentacao, .introducao-servicos-div {
+  z-index: 10;
+  width: 80%;
+  display: block;
+  margin: 3em auto;
+  margin-top: 10em;
+  text-align: center;
+}
+
+.geral-servicos {
+  z-index: 10;
+  width: 100%;
+  background: #ffd9cb;
+  padding: 2%;
+}
+
+.servico {
+  z-index: 10;
+  vertical-align: text-top;
+  display: inline-block;
+  width: 29%;
+  background: rgba(255, 240, 235, 255);
+  border-radius: 20px;
+  margin: 2em 1.3em;
+  padding: 2%;
+  height: 650px;
+}
+
+/* Imagens */
+img.imagem-principal {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+}
+
+img.social {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  position: relative;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+img.card-img-top {
+  width: 290px;
+  height: 290px;
+}
+
+/* Ajustes Mobile */
+@media (min-width: 100px) and (max-width: 1200px){
+  .servico {
+    height: fit-content;
+  }
+  
+  img.perfil {
+    width: 200px;
+    height: auto;
+  }
+
+  .paragrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .apresentacao-p {
+    text-align: center;
+    line-height: 1.2em;
+  }
+  
+
+  /*Divs */
+  .servico {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    padding: 2%;
+    justify-content: center;
+  }
+
+/*Imagens */
+img.imagem-principal {
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+}
+
+.geral-servicos {
+  width: 100%;
+  background: #ffd9cb;
+  margin: 1em 0;
+}
+
+  div.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    text-align: center;
+  }
+} 
+
+header{
+  top: 0%;
+  right: 0;
+  width: 100%;
+  height: 200px;
+}
+
+
+  .rosa {
+    background: rgba(255,240,235,255);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .rosa-escuro {
+    background: #ffd9cb;
+    padding-top: 0.8em;
+    margin: 0;
+    overflow: hidden;
+  }
+
+
+  .itens-servicos ul li {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+/* Rodapé */
+  li {
+    list-style-type: none;
+  }
+  footer {
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 240, 235, 255);
+    box-shadow: black;
+    text-align: center;
+    
+  }
+
+  footer h3.rodape-texto {
+    font-family: 'Nunito', 'Raleway', sans-serif ;
+    padding-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    z-index: 1;
+  }
+  
+  .social ul {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .social ul a {
+    display: inline-block;
+    padding: 4px;
+    
+  }
+  
+  .social ul li a img {
+    max-width: 35px;
+  }
+
+  /* Estilização Cards */
+
+  div.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+  }
+  div.card-body {
+    background-color: rgba(255, 240, 235);
+  }
+
+  h5.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  a.btn{
+    background: #efabab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  a.btn:hover,a.btn::before, a.btn::after {
+    background: #e8c2c2;
+  }
+
+  div.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+ 

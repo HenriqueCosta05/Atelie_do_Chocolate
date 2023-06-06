@@ -1,0 +1,165 @@
+body {
+  background-image: url(../Imagens/background.png);
+}
+
+.titulo-form {
+  text-transform: uppercase;
+}
+/* Estilização dos Checkboxes */
+div.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox input + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: rgb(255, 240, 235);
+  border: 1px solid #9a9a9a;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.custom-checkbox input:checked + label:before {
+  background-color: #ffd9cb;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  border: none;
+  padding: 1px;
+}
+
+form {
+  width: 40%;
+  height: 100%;
+  min-width: 300px;
+  background-color: #ffcece23;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+  margin: 10em auto;
+}
+
+input:not([type="checkbox"]),
+textarea,
+select {
+  
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid linear-gradient(90deg, #ffe4ff, #ffe8fd, #ffe3f9);
+  margin-top: 20px;
+  width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
+}
+
+textarea.inputs {
+  margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 250px;
+}
+
+.botao-enviar {
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  min-width: 280px;
+  border: none;
+  border-radius: 5px;
+  background: #efabab;
+  color: #fff;
+  font-weight: bold;
+}
+
+.botao-enviar:hover {
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  min-width: 320px;
+  border: none;
+  border-radius: 5px;
+  background: #e8c2c2;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'raleway', Arial, Helvetica, sans-serif;
+}
+
+p, label {
+  font-family: 'Nunito', sans-serif;
+}
+
+legend {
+  font-family: 'raleway', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+}
+
+.insercao-informacoes {
+  padding-top: 25px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  form {
+    width: 50%;
+    max-width: 200px;
+    margin: 15em auto;
+    height: 60%;
+  }
+
+}
+
+li {
+  list-style-type: none;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 240, 235, 255);
+  box-shadow: black;
+  text-align: center;
+  
+}
+
+footer h3.rodape-texto {
+  font-family: 'Nunito', 'Raleway', sans-serif ;
+  padding-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social ul a {
+  display: inline-block;
+  padding: 4px;
+  
+}
+
+.social ul li a img {
+  max-width: 35px;
+}
+
+
+
